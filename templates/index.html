@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Apertium | A free/open-source machine translation system</title>
+		<script src="https://unpkg.com/htmx.org@2.0.0"></script>
+	</head>
+	<body>
+		<nav>
+			<button hx-get="/translate" hx-target="#body" hx-trigger="click, load">
+				Translation
+			</button>
+			<button hx-get="/analyze" hx-target="#body">
+				Morphological Analysis
+			</button>
+			<button hx-get="/generate" hx-target="#body">
+				Morphological Generation
+			</button>
+		</nav>
+		<div id="body">
+		</div>
+	</body>
+</html>
